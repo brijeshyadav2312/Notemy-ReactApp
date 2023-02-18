@@ -1,0 +1,79 @@
+.rightMainSection{
+    position: relative;
+    color: var(--text-color);
+    width: calc(100vw - 18vw);
+    height: 100vh;
+    float: right;
+    background-color: var(--right-Sec);
+    padding: 1rem;
+}
+
+.addNote{
+    position: absolute;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    background-color: var(--left-Sec);
+    width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    right: 30px;
+    bottom: 190px;
+    cursor: pointer;
+}
+
+.addNote:hover{
+    background-color: var(--save-btn-color-hover);
+    transition: 0.4s;
+}
+.addNote:active{
+    font-size: 2.2rem;
+}
+
+.writeNote{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.writeNote textarea, .writeNote input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+.writeNote input{
+    font-size: 1.3rem;
+    font-weight: bold;
+    height: 10vh;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.writeNote textarea{
+    font-size: 1.2rem;
+    height: 60vh;
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    border-radius: 10px;
+    resize: none;
+}
+.quotes{
+    height: 125px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+}
+.quotes span p:first-child{
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+.quotes span p:last-child{
+    text-align: end;
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.Dark{
+  --left-Sec: #212122;
+  --right-Sec: #343541;
+  --text-color: #e3e3e3;
+  --text-hover: rgb(255, 255, 255);
+  --left-Back-hover: #2d2d2d;
+  --border-color: rgba(255, 255, 255, 0.205);
+  --save-btn-color-hover: #5fa44f;
+}
+.Light{
+  --left-Sec: #D2DAFF;
+  --right-Sec: #EEF1FF;
+  --text-color: #323232;
+  --text-hover: rgb(0, 0, 0);
+  --left-Back-hover: #B1B2FF;
+  --border-color: rgba(0, 0, 0, 0.466);
+  --save-btn-color-hover: #75cb61;
+}
+.App{
+  position: relative;
+}
+.mobileView{
+  display: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+@media only screen and (max-width: 480px){
+  .App{
+    display: none;
+  }
+  .mobileView{
+    display: block;
+  }
+  .leftSection, .detailPage, .rightMainSection{
+    width: 100vw !important;
+  }
+  .quotes{
+    height: 325px !important;
+  }
+  .rightMainSection{
+    height: auto !important;
+  }
+  .leftTitleText{
+    width: 230px !important;
+  }
+  .addNote{
+    bottom: 382px !important;
+  }
+}

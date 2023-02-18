@@ -1,0 +1,94 @@
+.leftSection{
+    background-color: var(--left-Sec);
+    width: 18vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--text-color);
+    float: left;
+    padding: 0.7rem 1rem;
+    position: fixed;
+}
+
+.newNotesHead{
+    border: 1px solid var(--border-color);
+    padding: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.header>div:first-child:hover{
+    background-color: var(--left-Back-hover);
+    border-radius: 7px;
+    transition: 0.4s ease-in-out;
+}
+
+.footer{
+    border-top: 1px solid var(--border-color);
+    padding: 1rem 0;
+}
+
+.footer button{
+    width: 100%;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.7rem 1rem;
+    margin-top: 0.5rem;
+    color: var(--text-color);
+}
+.footer button:hover{
+    background-color: var(--left-Back-hover);
+    cursor: pointer;
+    border-radius: 7px;
+    transition: 0.4s ease-in-out;
+}
+
+.notesContainer{
+    display: flex;
+    flex-direction: column;
+    height: 62vh;
+    overflow-y: scroll;
+    gap: 0.4rem;
+    padding: 0.7rem 0;
+}
+
+.notesContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.notesContainer div{
+    background-color: var(--right-Sec);
+    border: none !important;
+    padding: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.leftTitleText{
+    width: 140px;
+    white-space: nowrap;
+    -webkit-mask-image: linear-gradient(90deg,#000 90%,transparent);
+    overflow-x: scroll;
+}
+.leftTitleText::-webkit-scrollbar{
+    display: none;
+}
+.notesContainer div span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+}
+.notesContainer div span>p:hover{
+    color: var(--text-hover);
+}
